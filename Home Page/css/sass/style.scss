@@ -1,0 +1,399 @@
+$mainColor: #1c1e53;
+$backgroundColor: #f4f6fc;
+$fontColor: #282938;
+$contentGradient: linear-gradient(
+  329.39deg,
+  #1c1e53 -10.96%,
+  rgba(28, 30, 83, 0.42) 103.96%
+);
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $mainColor;
+    height: 92px;
+
+    .logo {
+      margin: 0 160px;
+    }
+
+    .navigations {
+      display: flex;
+      align-items: center;
+      margin: 0 160px;
+      gap: 40px;
+
+      .home {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      a {
+        color: #bbbbcb;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover {
+          color: #f0f0f0;
+        }
+      }
+
+      button {
+        width: 185px;
+        height: 60px;
+        border: 1px solid #f4f6fc33;
+        color: white;
+        background-color: $mainColor;
+        border-radius: 41px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+
+  .homehero {
+    width: 100%;
+    height: 760px;
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+      margin-top: 126px;
+
+      .texts {
+        h1 {
+          font-size: 54px;
+          color: white;
+        }
+
+        p {
+          margin-top: 24px;
+          color: white;
+          font-size: 16px;
+        }
+
+        .btns {
+          display: flex;
+          gap: 40px;
+          margin-top: 48px;
+
+          .btn {
+            background-color: #fcd980;
+            border-radius: 41px;
+            border: none;
+            padding: 10px 20px;
+            color: $mainColor;
+            width: 230px;
+            height: 64px;
+            font-size: 18px;
+          }
+
+          .textbtn {
+            border: none;
+            background-color: $mainColor;
+            color: white;
+          }
+        }
+      }
+
+      .homeimg {
+        img {
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+
+  .ourwork {
+    background-color: white;
+    position: relative;
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 160px;
+
+      h1 {
+        color: $mainColor;
+        font-size: 48px;
+      }
+
+      button {
+        font-size: 16px;
+        color: $mainColor;
+        border: none;
+      }
+    }
+
+    .container1 {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .content {
+        margin: 0 160px;
+        background-color: $mainColor;
+        width: 396px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        background: $contentGradient;
+        position: relative;
+        z-index: 2;
+
+        .card1 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1; // Place the image behind the content
+          width: 100%; // Adjust size as needed
+          height: auto;
+        }
+
+        div {
+          h3 {
+            font-size: 24px;
+            color: white;
+            margin: 0 35px 0 48px;
+          }
+
+          p {
+            font-size: 16px;
+            color: white;
+            margin: 16px 55px 0 48px;
+          }
+
+          .textbtn2 {
+            border: none;
+            color: #fcd980;
+            background-color: transparent;
+            font-size: 16px;
+            margin: 40px 208px 76px 48px;
+          }
+        }
+      }
+
+      .hoveroverlay {
+        margin: 0 160px;
+        background-color: $mainColor;
+        width: 405px;
+        height: 284px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-end;
+        background: $contentGradient;
+
+        h3 {
+          font-size: 24px;
+          color: white;
+          margin: 129px 36px 0 56px;
+        }
+
+        button {
+          border: none;
+          color: #fcd980;
+          background-color: transparent;
+          font-size: 16px;
+          margin: 10px 199px 45px 56px;
+        }
+      }
+    }
+  }
+
+  .features {
+    margin-top: 120px;
+    background-color: $backgroundColor;
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 47px;
+      color: $fontColor;
+
+      p {
+        font-size: 16px;
+      }
+
+      h1 {
+        margin-top: 12px;
+        font-size: 48px;
+      }
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 1200px;
+
+      .card1 {
+        margin-top: 42px;
+      }
+
+      .card2 {
+        margin-top: 42px;
+      }
+
+      .card4 {
+        margin-top: 24px;
+      }
+
+      .card5 {
+        margin-top: 24px;
+      }
+
+      .card6 {
+        margin-top: 63px;
+      }
+    }
+  }
+
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin: 128px 160px 128px 160px;
+
+    .heading {
+      gap: 60px;
+      h3 {
+        font-size: 38px;
+        color: $fontColor;
+      }
+
+      p {
+        margin-top: 16px;
+        color: $fontColor;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        font-size: 32px;
+        color: $fontColor;
+        margin-bottom: 48px;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        .profile {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          .img {
+            img {
+              border-radius: 50px;
+            }
+          }
+
+          div {
+            display: grid;
+            .name {
+              margin: 0px;
+              font-size: 18px;
+              color: $fontColor;
+            }
+
+            p {
+              margin: 0px;
+              font-size: 12px;
+              color: $fontColor;
+            }
+          }
+        }
+
+        .arrows {
+          display: flex;
+          gap: 10px;
+          position: relative;
+          align-items: center;
+          justify-content: space-between;
+
+          // .left {
+          // }
+
+          // .circle {
+          // }
+
+          // .right {
+          // }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $mainColor;
+
+    .content {
+      display: flex;
+      justify-content: start;
+      gap: 260px;
+      color: white;
+      margin-left: 159px;
+      padding-top: 103px;
+
+      .container1 {
+        margin-top: 40px;
+
+        p {
+          font-size: 16px;
+        }
+
+        .contact {
+          background-color: #fcd980;
+          color: $fontColor;
+          display: flex;
+          justify-content: start;
+          gap: 29px;
+          margin-top: 86px;
+          margin-bottom: 92px;
+          width: 517px;
+          .info {
+            padding-top: 17px;
+            margin-left: 37px;
+          }
+          .info2 {
+            padding-top: 17px;
+          }
+        }
+      }
+
+      .container2 {
+        h2 {
+          font-size: 48px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 300;
+        }
+
+        .media {
+          gap: 26px;
+          display: flex;
+        }
+
+        .media a i {
+          color: white;
+        }
+      }
+    }
+  }
+}
