@@ -1,11 +1,4 @@
-$mainColor: #1c1e53;
-$backgroundColor: #f4f6fc;
-$fontColor: #282938;
-$contentGradient: linear-gradient(
-  329.39deg,
-  #1c1e53 -10.96%,
-  rgba(28, 30, 83, 0.42) 103.96%
-);
+@import 'variables';
 
 body {
   margin: 0;
@@ -144,21 +137,18 @@ body {
         width: 396px;
         height: 600px;
         display: flex;
+        justify-content: end;
         flex-direction: column;
-        align-items: start;
-        justify-content: space-between;
         background: $contentGradient;
-        position: relative;
-        z-index: 2;
 
-        .card1 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1; // Place the image behind the content
-          width: 100%; // Adjust size as needed
-          height: auto;
-        }
+        // .card1 {
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   z-index: 1;
+        //   width: 100%; 
+        //   height: auto;
+        // }
 
         div {
           h3 {
